@@ -17,7 +17,7 @@ class CategoryController extends Controller
         return response()->json($categories);
     }
 
-    public function create(Request $request)
+    public function create(Request $request) // funcion para crear nuevas categorias
     {
         try
         {
