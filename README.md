@@ -1,3 +1,83 @@
+## React Product Management App - Backend Test
+
+Este proyecto es una aplicación Laravel para la gestión de productos que incluye funcionalidades para listar, agregar, actualizar y eliminar productos y categorías. Es consumido por una interfaz frontend creada en React mediante una API RESTful.
+
+
+## Requerimientos
+Asegúrate de tener las siguientes herramientas instaladas en tu máquina:
+
+- PHP 8.3 o superior.
+- Composer 2.8 o superior.
+- Base de datos MySQL.
+- Node.js y NPM (si es necesario para el frontend, como en Laravel Mix).
+
+## Pasos para Clonar el Repositorio
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/guerrerogenesis/backend-test.git
+
+2. **Accede al directorio del proyecto donde lo clonaste:**
+   ```bash
+   cd nombre-del-repositorio
+
+3. **Instala las dependencias:**
+   ```bash
+   composer install
+   npm install *opcional
+
+4. **Copiar el archivo .env.example**
+    Laravel utiliza un archivo .env para la configuración del entorno. Copia el archivo .env.example a .env:
+   ```bash
+   cp .env.example .env
+
+
+3. **Generar la clave de la aplicación**
+    Laravel necesita una clave única para la aplicación. Ejecuta el siguiente comando para generarla:
+   ```bash
+   php artisan key:generate
+
+
+3. **Configurar la base de datos**
+    Abre el archivo .env y configura los parámetros de la base de datos. Por ejemplo, si estás usando MySQL, asegúrate de tener:
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=nombre_de_base_de_datos
+   DB_USERNAME=usuario
+   DB_PASSWORD=contraseña
+
+
+
+## Pasos para Ejecutar la Aplicación
+
+Hay 2 opciones para generar la base de datos
+1. **Correr las migraciones y seeders**
+    Para crear las tablas en la base de datos y llenar los datos iniciales, ejecuta el siguiente comando:
+    ```bash
+    php artisan migrate --seed
+
+O bien
+
+1.**Importar el backup**
+    En la carpeta raiz del proyecto viene un archivo llamado databasetest.sql.zip que se puede utilizar para importar con el gestor de base de datos de su preferencia. Puede ser TablePlus, PHPMyAdmin, etc.
+
+
+2. **Correr el servidor de desarrollo**
+    Para iniciar el servidor de desarrollo de Laravel, ejecuta:
+    ```bash
+    php artisan serve
+
+Esto arrancará el servidor en http://localhost:8000 por defecto. Puedes abrir esa URL en tu navegador para ver la aplicación.
+
+
+
+
+---
+
+
+## Esta proyecto esta desarrollado con:
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
