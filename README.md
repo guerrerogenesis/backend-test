@@ -61,7 +61,7 @@ Hay 2 opciones para generar la base de datos
 O bien
 
 1.**Importar el backup**
-    En la carpeta raiz del proyecto viene un archivo llamado databasetest.sql.zip que se puede utilizar para importar con el gestor de base de datos de su preferencia. Puede ser TablePlus, PHPMyAdmin, etc.
+    En la carpeta raiz del proyecto viene un archivo llamado init.sql.zip que se puede utilizar para importar con el gestor de base de datos de su preferencia. Puede ser TablePlus, PHPMyAdmin, etc.
 
 
 2. **Correr el servidor de desarrollo**
