@@ -1,4 +1,4 @@
-## React Product Management App - Backend Test
+## Product Management App - Backend Test
 
 Este proyecto es una aplicación Laravel para la gestión de productos que incluye funcionalidades para listar, agregar, actualizar y eliminar productos y categorías. Es consumido por una interfaz frontend creada en React mediante una API RESTful.
 
